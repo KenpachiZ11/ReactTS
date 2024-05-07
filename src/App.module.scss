@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: gray;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.app_styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+  background-color: antiquewhite;
+}
