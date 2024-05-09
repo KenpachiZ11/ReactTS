@@ -1,29 +1,15 @@
 import React from 'react';
 import styles from './App.module.scss';
+import Layout from './Components/Layout/Layout';
+import Routers from './Routers/Routers';
 
-interface ObjModel {
-  name: string;
-  age: number;
-}
-
-function ModelPerson({name, age}: ObjModel) {
-  return (
-    <>
-      <h1>{name}</h1>
-      <h3>{age}</h3>
-    </>
-  )
-}
 
 
 function App() {
   return (
     <div className={styles['*']}>
-      ReactTS
-
-      <div className={styles.app_styles}>
-        <ModelPerson name='Alex' age={24} />
-      </div>
+      <Routers />
+      <Layout />
     </div>
   );
 }
