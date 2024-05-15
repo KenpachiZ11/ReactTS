@@ -1,15 +1,19 @@
 import React from 'react';
-// import { Outlet } from 'react-router-dom';
-import style from './Layout.module.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Outlet } from 'react-router-dom';
+import style from './Layout.module.scss';
 
-export default function Layout() {
+type Props = {}
+
+export default function Layout({}: Props) {
     return (
-        <div className={style['owner']}>
+        <div className={style['*']}>
+
             <header><Header /></header>
-            <main></main>
+            <main><Outlet /></main>
             <footer><Footer /></footer>
+            
         </div>
     )
 }

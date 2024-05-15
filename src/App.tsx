@@ -1,17 +1,8 @@
-import React from 'react';
-import styles from './App.module.scss';
-import Layout from './Components/Layout/Layout';
-import Routers from './Routers/Routers';
+import React from 'react'
+import Layout from './Components/Layout/Layout'
 
+type Props = {}
 
-
-function App() {
-  return (
-    <div className={styles['*']}>
-      <Routers />
-      <Layout />
-    </div>
-  );
+export default function App({}: Props) {
+  return <Layout />
 }
-
-export default App;

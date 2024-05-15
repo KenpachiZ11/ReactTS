@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function ContactsPage() {
+type Props = {}
+
+export default function ContactsPage({}: Props) {
     return (
         <div>ContactsPage</div>
     )

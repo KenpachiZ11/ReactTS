@@ -1,21 +1,8 @@
-import React from 'react';
-// import Routers from '../../Routers/Routers';
-import { NavLink, Outlet } from 'react-router-dom';
+import React from 'react'
+import Nav from '../../Routers/Nav'
 
-export default function Header() {
-    return (
-        <nav>
-            {/* <Routers /> */}
-            <ul>
-                <li>
-                    <NavLink to='/'>Главная</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/contacts'>Контакты</NavLink>
-                </li>
-            </ul>
+type Props = {}
 
-            <Outlet />
-        </nav>
-    )
+export default function Header({}: Props) {
+    return <Nav />
 }
