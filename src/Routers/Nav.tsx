@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 type Props = {}
 
-export default function Nav({}: Props) {
+const Nav = ({}: Props) => {
     return (
         <nav>
             <ul>
@@ -23,3 +23,5 @@ export default function Nav({}: Props) {
         </nav>
     )
 }
+
+export default Nav;

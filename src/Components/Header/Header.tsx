@@ -1,8 +1,10 @@
-import React from 'react'
-import Nav from '../../Routers/Nav'
+import React from 'react';
+import Nav from '../../Routers/Nav';
 
 type Props = {}
 
-export default function Header({}: Props) {
+const Header = ({}: Props) => {
     return <Nav />
 }
+
+export default Header;

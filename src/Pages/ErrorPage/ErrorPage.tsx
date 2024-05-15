@@ -3,7 +3,7 @@ import { useRouteError, useNavigate } from "react-router-dom";
 
 type Props = {};
 
-export default function ErrorPage({}: Props) {
+const ErrorPage = ({}: Props) => {
     const nav = useNavigate();
     const error: unknown = useRouteError();
     console.error(error);
@@ -18,3 +18,5 @@ export default function ErrorPage({}: Props) {
         </div>
     )
 }
+
+export default ErrorPage;

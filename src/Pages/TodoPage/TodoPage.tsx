@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {}
 
-export default function TodoPage({}: Props) {
+const TodoPage = ({}: Props) => {
     return (
         <div>TodoPage</div>
     )
 }
+
+export default TodoPage;

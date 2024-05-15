@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {}
 
-export default function ContactsPage({}: Props) {
+const ContactsPage = ({}: Props) => {
     return (
         <div>ContactsPage</div>
     )
 }
+
+export default ContactsPage;

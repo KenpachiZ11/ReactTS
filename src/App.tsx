@@ -3,6 +3,8 @@ import Layout from './Components/Layout/Layout'
 
 type Props = {}
 
-export default function App({}: Props) {
+const App = ({}: Props) => {
   return <Layout />
 }
+
+export default App

@@ -6,7 +6,7 @@ import style from './Layout.module.scss';
 
 type Props = {}
 
-export default function Layout({}: Props) {
+const Layout = ({}: Props) => {
     return (
         <div className={style['*']}>
 
@@ -17,3 +17,5 @@ export default function Layout({}: Props) {
         </div>
     )
 }
+
+export default Layout;

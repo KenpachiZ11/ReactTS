@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {}
 
-export default function MainPage({}: Props) {
+const MainPage = ({}: Props) => {
     return (
         <div>MainPage</div>
     )
 }
+
+export default MainPage;

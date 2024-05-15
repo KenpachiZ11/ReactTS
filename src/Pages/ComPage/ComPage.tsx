@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {}
 
-export default function ComPage({}: Props) {
+const ComPage = ({}: Props) => {
     return (
         <div>ComPage</div>
     )
 }
+
+export default ComPage;
