@@ -10,7 +10,10 @@ const Nav = ({}: Props) => {
         <nav>
             <ul>
                 <li>
-                    <NavLink to='/main' className={isActive}>Главная</NavLink>
+                    <NavLink to='/' className={isActive}>Главная</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/shop' className={isActive}>Магазин</NavLink>
                 </li>
                 <li>
                     <NavLink to='/todoItem' className={isActive}>Список дел</NavLink>

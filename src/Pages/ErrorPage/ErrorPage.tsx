@@ -1,20 +1,24 @@
 import React from 'react';
 import { useRouteError, useNavigate } from "react-router-dom";
+import style from './ErrorPage.module.scss';
+import { Button } from 'antd';
 
 type Props = {};
 
 const ErrorPage = ({}: Props) => {
     const nav = useNavigate();
     const error: unknown = useRouteError();
-    console.error(error);
+    // console.error(error);
     
     return (
-        <div>
-            <h1>ErrorPage</h1>
+        <div className={style['error-page']}>
+            <div className={style['error-page__message']}>
+                <h1>ErrorPage</h1>
 
-            <i>{(error as Error)?.message || (error as { statusText?: string })?.statusText}</i>
+                <i>{(error as Error)?.message || (error as { data?: string })?.data}</i>
 
-            <button type="button" onClick={() => nav('/')}>Go Back!</button>
+                <Button type="primary" danger ghost onClick={() => nav('/')}>Go Back!</Button>
+            </div>
         </div>
     )
 }

@@ -7,6 +7,7 @@ import MainPage from '../Pages/MainPage/MainPage';
 import ContactsPage from '../Pages/ContactsPage/ContactsPage';
 import TodoPage from '../Pages/TodoPage/TodoPage';
 import ComPage from '../Pages/ComPage/ComPage';
+import ShopPage from '../Pages/ShopPage/ShopPage';
 
 
 const router = createBrowserRouter([
@@ -16,12 +17,12 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
             {
-                path: '/main',
+                path: '/',
                 element: <MainPage />
             },
             {
-                path: '/contacts',
-                element: <ContactsPage />
+                path: '/shop',
+                element: <ShopPage />
             },
             {
                 path: '/todoItem',
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
             {
                 path: '/comments',
                 element: <ComPage />
-            }
+            },
+            {
+                path: '/contacts',
+                element: <ContactsPage />
+            },
         ]
     },
 ]);

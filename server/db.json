@@ -1,0 +1,82 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "role": "Admin",
+            "name": "Daniil"
+        },
+        {
+            "id": 2,
+            "role": "User",
+            "name": "User"
+        }
+    ], 
+    "shop": [
+        {   
+            "id": "12e4weqwe",
+            "name": "T-shirt",
+            "price": 1200,
+            "size": ["S", "M", "L", "XL"],
+            "color": ["Black", "White", "Yellow"],
+            "type": "clothes",
+            "value": 0
+        },
+        {
+            "id": "sadwqe132",
+            "name": "Jacket",
+            "price": 3500,
+            "size": ["S", "M", "L", "XL"],
+            "color": ["Black", "White", "Yellow"],
+            "type": "clothes",
+            "value": 0
+        },
+        {
+            "id": "123qwdsad",
+            "name": "Sweatshirt",
+            "price": 2900,
+            "size": ["S", "M", "L", "XL"],
+            "color": ["Black", "White", "Yellow"],
+            "type": "clothes",
+            "value": 0
+        }, 
+        {
+            "id": "fgh4345rdfsd",
+            "name": "The generator",
+            "price": 10990,
+            "power": ["10 Mega Watts", "15 Mega Watts", "20 Mega Watts"],
+            "color": ["Black", "Green", "Red"],
+            "type": "electronics",
+            "value": 0,
+            "sale": true
+        },
+        {
+            "id": "sdfgdfg43tr3",
+            "name": "Table",
+            "price": 2900,
+            "size": ["135х90х75", "160х90х75", "200х90х75"],
+            "color": ["Black && Red", "Black && White"],
+            "type": "furniture",
+            "value": 0
+        },
+        {
+            "id": "sdfsd433r342",
+            "name": "Cake",
+            "price": 1000,
+            "dateToFirst": "18-06-2024",
+            "dateToEnd": "20-06-2024",
+            "type": "foodProducts",
+            "value": 0,
+            "discount": 0.2
+        },
+        {
+            "id": "Sdg3424524",
+            "name": "Salat",
+            "price": 590,
+            "dateToFirst": "17-06-2024",
+            "dateToEnd": "20-06-2024",
+            "type": "foodProducts",
+            "value": 0,
+            "discount": 0.35
+        }
+    ]
+}
