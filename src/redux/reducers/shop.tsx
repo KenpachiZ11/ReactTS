@@ -8,14 +8,34 @@ interface ICart {
     total: number,
     isLoading: boolean,
     error: string | null,
+    // filterCardShop: IFilterCardShop[]
     // value: number
 }
 
-const initialState: ICart= {
+// interface IFilterCardShop {
+//     all: string,
+//     // type: string,
+//     clothes?: string,
+//     electronics?: string,
+//     furniture?: string,
+//     foodProducts?: string
+// }
+
+export const filterCardShop = {
+    all: 'all',
+    // type: string,
+    clothes: 'clothes',
+    electronics: 'electronics',
+    furniture: 'furniture',
+    foodProducts: 'foodProducts'
+}
+
+const initialState: ICart = {
     cartItems: [],
     total: 0,
     isLoading: false,
     error: null,
+    // filterCardShop: [],
     // value: 0,
 }
 
@@ -38,6 +58,9 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
+        // filterCardShopItem: (state, action) => {
+        //     state.filterCardShop = action.payload;
+        // },
         // plus: (state) => {
         //     state.value += 1;
         // },
@@ -66,5 +89,5 @@ const cartSlice = createSlice({
     }
 })
 
-// export const { plus, minus, reset } = cartSlice.actions;
+// export const {  } = cartSlice.actions;
 export default cartSlice.reducer;
