@@ -28,6 +28,10 @@ const ShopPage = ({}: Props) => {
         return arrayCard.filter(({ name }: any) => name.toLowerCase().includes(searchCard.toLocaleLowerCase()))
     }
 
+    useEffect(() => {    
+        dispatch(getProduct());
+    }, [dispatch]);
+
     useEffect(() => {  
         const Debounce = setTimeout(() => {
             const filterCard = filteredCard(inputFilter, cartItems);
@@ -36,17 +40,12 @@ const ShopPage = ({}: Props) => {
 
         return () => clearTimeout(Debounce);
 
-    }, [inputFilter]);
-
-    useEffect(() => {    
-        dispatch(getProduct());
-    }, [dispatch]);
+    }, [inputFilter, cartItems]);
 
     if(isLoading) return <div>Loading...</div>;
     if(error) return <div>Error: { error }</div>;
 
     return (
-
         <>
             <input 
                 type="text" 
@@ -54,16 +53,12 @@ const ShopPage = ({}: Props) => {
                 onChange={handleInputChange}
                 placeholder="Enter your search"
             />
-
+            
             <div className={style['wrapper-card']}>
                 {
-                    cartItems && cardList 
+                    cardList 
                     ?
-                        cartItems && cardList.map((el: any) => {
-                            return (
-                                <CardShop key={el.id} {...el}/>
-                            )
-                        })
+                        cardList.map((el: any) => <CardShop key={el.id} {...el}/>)
                     :
                         <div>Данных нет</div>
                 }
